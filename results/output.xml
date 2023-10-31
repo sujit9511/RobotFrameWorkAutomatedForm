@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231031 16:40:36.747" rpa="false" schemaversion="4">
+<suite id="s1" name="Form Automation Robot Framework" source="C:\Users\great\Desktop\Learn\RobotFrameWork Learning\Form Automation Robot Framework">
+<suite id="s1-s1" name="FormAutomation" source="C:\Users\great\Desktop\Learn\RobotFrameWork Learning\Form Automation Robot Framework\FormAutomation.robot">
+<test id="s1-s1-t1" name="Save User" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>browser=edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231031 16:40:37.182" level="INFO">Opening browser 'edge' to base url 'https://sujit9511.github.io/Registration-Form/'.</msg>
+<status status="PASS" starttime="20231031 16:40:37.181" endtime="20231031 16:40:43.863"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231031 16:40:43.864" endtime="20231031 16:40:44.009"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=fname</arg>
+<arg>text=Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:44.013" level="INFO">Typing text 'Robot' into text field 'fname'.</msg>
+<status status="PASS" starttime="20231031 16:40:44.010" endtime="20231031 16:40:44.191"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=lname</arg>
+<arg>text=One</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:44.193" level="INFO">Typing text 'One' into text field 'lname'.</msg>
+<status status="PASS" starttime="20231031 16:40:44.192" endtime="20231031 16:40:44.322"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=email</arg>
+<arg>text=robotone@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:44.325" level="INFO">Typing text 'robotone@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20231031 16:40:44.323" endtime="20231031 16:40:44.539"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:44.542" level="INFO">Clicking element 'male'.</msg>
+<status status="PASS" starttime="20231031 16:40:44.540" endtime="20231031 16:40:44.654"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>//*[@id="dropdown"]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20231031 16:40:44.657" level="INFO">Selecting options from selection list '//*[@id="dropdown"]' by index 1.</msg>
+<status status="PASS" starttime="20231031 16:40:44.655" endtime="20231031 16:40:44.870"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 16:40:46.872" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231031 16:40:44.871" endtime="20231031 16:40:46.872"/>
+</kw>
+<status status="PASS" starttime="20231031 16:40:37.179" endtime="20231031 16:40:46.875"/>
+</test>
+<test id="s1-s1-t2" name="Search User" line="22">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/div[1]/div/label/input</arg>
+<arg>text=dummyone@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:46.881" level="INFO">Typing text 'dummyone@gmail.com' into text field '//*[@id="root"]/div/div/div[1]/div/label/input'.</msg>
+<status status="PASS" starttime="20231031 16:40:46.879" endtime="20231031 16:40:47.081"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/div[1]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:47.083" level="INFO">Clicking button '//*[@id="root"]/div/div/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20231031 16:40:47.082" endtime="20231031 16:40:47.205"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 16:40:49.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231031 16:40:47.206" endtime="20231031 16:40:49.208"/>
+</kw>
+<status status="PASS" starttime="20231031 16:40:46.877" endtime="20231031 16:40:49.209"/>
+</test>
+<test id="s1-s1-t3" name="Update User" line="27">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:49.214" level="INFO">Clicking button '//*[@id="root"]/div/div/button'.</msg>
+<status status="PASS" starttime="20231031 16:40:49.213" endtime="20231031 16:40:49.374"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/div[3]/form/label[1]/input</arg>
+<arg>clear=True</arg>
+<arg>text=DaDummy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:49.377" level="INFO">Typing text 'DaDummy' into text field '//*[@id="root"]/div/div/div[3]/form/label[1]/input'.</msg>
+<status status="PASS" starttime="20231031 16:40:49.375" endtime="20231031 16:40:49.508"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/div[3]/form/label[2]/input</arg>
+<arg>clear=Yes</arg>
+<arg>text=Two</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:49.510" level="INFO">Typing text 'Two' into text field '//*[@id="root"]/div/div/div[3]/form/label[2]/input'.</msg>
+<status status="PASS" starttime="20231031 16:40:49.509" endtime="20231031 16:40:49.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//*[@id="root"]/div/div/div[3]/form/label[4]/input</arg>
+<arg>clear=1</arg>
+<arg>text=Male</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231031 16:40:49.626" level="INFO">Typing text 'Male' into text field '//*[@id="root"]/div/div/div[3]/form/label[4]/input'.</msg>
+<status status="PASS" starttime="20231031 16:40:49.625" endtime="20231031 16:40:49.749"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div[3]/form/label[5]/select</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20231031 16:40:49.751" level="INFO">Selecting options from selection list '//*[@id="root"]/div/div/div[3]/form/label[5]/select' by index 2.</msg>
+<status status="PASS" starttime="20231031 16:40:49.750" endtime="20231031 16:40:49.906"/>
+</kw>
+<status status="PASS" starttime="20231031 16:40:49.211" endtime="20231031 16:40:49.907"/>
+</test>
+<test id="s1-s1-t4" name="Close Browser" line="34">
+<kw name="Sleep" library="BuiltIn">
+<arg>time_=5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231031 16:40:54.913" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231031 16:40:49.912" endtime="20231031 16:40:54.913"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231031 16:40:54.914" endtime="20231031 16:40:57.234"/>
+</kw>
+<status status="PASS" starttime="20231031 16:40:49.909" endtime="20231031 16:40:57.235"/>
+</test>
+<doc>MyFormTesting</doc>
+<status status="PASS" starttime="20231031 16:40:36.803" endtime="20231031 16:40:57.237"/>
+</suite>
+<status status="PASS" starttime="20231031 16:40:36.755" endtime="20231031 16:40:57.241"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Form Automation Robot Framework">Form Automation Robot Framework</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="FormAutomation">Form Automation Robot Framework.FormAutomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
